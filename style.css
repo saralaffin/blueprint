@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Merriweather Sans", sans-serif;
+}
+header a.donate,
+.white-bg,
+footer a.donate,
+#hero form button {
+  border-radius: 3px;
+}
+header {
+  background-color: #38a6e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12.5vh;
+  padding: 0 16vw;
+  color: white;
+}
+.logo {
+  background-image: url("Links/SamanthaHall_Logo.png");
+  height: 90%;
+  width: 150px;
+}
+.logo,
+.logo-reversed {
+  background-size: 100% 100%;
+  background-position: center;
+}
+.logo-reversed {
+  background-image: url("Links/SamanthaHall_Logo_reversed.png");
+  height: 65px;
+  width: 125px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+header svg {
+  height: 36px;
+  width: 36px;
+}
+header img {
+  height: 30px;
+  width: 30px;
+}
+header a.donate {
+  background-color: #f65151;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  margin: 5px;
+  font-weight: bold;
+}
+#hero {
+  background-image: url("Links/18604371049_c3763aa154_o.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 16vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25vh 25vh;
+}
+.headshot {
+  background-image: url("Links/headshot_noBG.png");
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+}
+#hero h2 {
+  color: #0e75b0;
+  font-size: 40px;
+  font-weight: 700;
+  margin: auto 0;
+}
+#hero h2 span,
+#hero h3 {
+  color: #38a6e8;
+}
+#hero h3 {
+  font-size: 30px;
+}
+.white-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  padding: 15px;
+  height: 90%;
+}
+#hero form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input {
+  padding: 10px;
+  border: solid rgb(158, 158, 158) 1px;
+}
+input:first-child {
+  width: 40%;
+}
+input:nth-child(2) {
+  width: 20%;
+}
+#hero form button {
+  width: 20%;
+  background-color: #f68a51;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 37.5vh;
+  background-color: #0e75b0;
+  color: white;
+  font-size: 16px;
+  padding: 5vh;
+}
+footer p {
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+footer a.donate {
+  text-decoration: none;
+  border: solid 1px white;
+  padding: 3px 10px;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  header,
+  #hero {
+    padding: 0 8vw;
+  }
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header,
+  #hero {
+    padding: 0 4vw;
+  }
+  header a.donate {
+    font-size: small;
+  }
+  #hero {
+    flex-direction: column;
+    grid-template-columns: 60vw 30vw;
+  }
+  .headshot {
+    height: 50vh;
+  }
+  #hero h2 {
+    width: 45vw;
+    margin-left: -10vw;
+    font-size: 28px;
+  }
+  .white-bg {
+    height: 25vh;
+    margin: 30vh auto 0 -60vw;
+  }
+  footer {
+    height: 80vh;
+    padding-top: 40vh;
+  }
+}
